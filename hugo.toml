@@ -1,0 +1,25 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+enablerobotstxt = true
+copyright = "© Hayden Stites 2023"
+
+[[module.imports]]
+path = "github.com/willfaught/paige"
+
+[languages.en]
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "programming"
+name = "Programming"
+url = "/programming/"
+weight = 10
+
+[markup.goldmark.renderer]
+unsafe = true
