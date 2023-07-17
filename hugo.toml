@@ -1,6 +1,7 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
+baseURL = "https://haydenstites.github.io/"
+languageCode = "en-us"
 enablerobotstxt = true
+enableemoji = true
 copyright = "© Hayden Stites 2023"
 
 [[module.imports]]
@@ -13,13 +14,25 @@ weight = 10
 identifier = "home"
 name = "Home"
 url = "/"
+weight = 20
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About Me"
+url = "/about/"
 weight = 10
 
 [[languages.en.menu.main]]
 identifier = "programming"
 name = "Programming"
 url = "/programming/"
-weight = 10
+weight = 30
+
+[[languages.en.menu.main]]
+identifier = "art"
+name = "3D Art"
+url = "/art/"
+weight = 40
 
 [markup.goldmark.renderer]
 unsafe = true

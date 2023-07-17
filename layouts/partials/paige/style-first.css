@@ -20,4 +20,35 @@
     display: none;
 }
 
-#paige-description { font-style: italic; }
+#paige-description {
+    font-style: italic;
+}
+
+#paige-root {
+    background-color: #FBFBFD;
+    text-align: center;
+}
+#paige-title {
+    color: #0c043b;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.flex-child {
+    flex: 1;
+    border: 3px #0c043b;
+    border-radius: 25px;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
