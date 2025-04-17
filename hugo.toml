@@ -1,0 +1,41 @@
+# Hugo version: v0.143.0
+# Paige version: v0.92.0
+
+baseURL = "https://haydenstites.github.io/"
+languageCode = "en-us"
+enableRobotsTXT = true
+enableEmoji = true
+# copyright = "© Hayden Stites 2025"
+
+[[module.imports]]
+path = "github.com/willfaught/paige"
+
+[params.paige]
+menu_style = "pills"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[caches.images]
+dir = ':cacheDir/images'
+
+[languages.en]
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 20
+
+[[languages.en.menu.main]]
+identifier = "publications"
+name = "Publications"
+url = "/publications"
+weight = 30
